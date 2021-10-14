@@ -1,4 +1,4 @@
-import {IMenu} from "../core/domain/menu-domain";
+import {IMenu} from "../core/domain/menu";
 
 export class MenuMother {
     static learMenu(): Array<IMenu> {

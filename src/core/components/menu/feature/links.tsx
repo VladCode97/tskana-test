@@ -1,4 +1,4 @@
-import {IMenu} from "../../../domain/menu-domain";
+import {IMenu} from "../../../domain/menu";
 import {FC} from "react";
 
 type links = {
