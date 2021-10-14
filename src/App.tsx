@@ -1,18 +1,15 @@
 import React from 'react';
-import {Menu} from "./core/components/menu/menu";
-import {Footer} from "./core/components/footer/footer";
-import {Header} from "./core/components/header/header";
+import {Menu} from "./core/ui/menu/menu";
+import {Footer} from "./core/ui/footer/footer";
+import {Header} from "./core/ui/header/header";
+import {Auth} from "./features/ui/auth/auth";
 
 function App() {
     return (
         <div className="App">
             <Menu/>
             <Header/>
-            <div style={{height: "70vh"}}>
-                <h1>
-                    hello
-                </h1>
-            </div>
+            <Auth/>
             <Footer/>
         </div>
     );
