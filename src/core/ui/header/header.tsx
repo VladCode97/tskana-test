@@ -7,10 +7,15 @@ export const Header = () => {
         <header className="header">
             <div className="container-header">
                 {
-                    HeaderMother.learnHeader().map((x) => {
+                    HeaderMother.learnHeader().map((x, index) => {
                         return (
-                            <span className="link-css">{x.title} {(x.isIcon) &&
-                            <img className="arrow-img" src={ArrowDown}
+                            <span
+                                key={index}
+                                className="link-css">{x.title} {(x.isIcon) &&
+                            <img
+                                key={index}
+                                className="arrow-img"
+                                 src={ArrowDown}
                                  alt="arrow"/>}  </span>
                         )
                     })

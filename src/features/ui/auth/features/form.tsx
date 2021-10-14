@@ -63,7 +63,9 @@ export const FormAuth = () => {
                 </div>
             </div>
             <div className="forget-password">
-                <a href="#"> He olvidado mi contraseña</a>
+                {/* eslint-disable jsx-a11y/anchor-is-valid */}
+                <a href="#" target="_blank"
+                > He olvidado mi contraseña</a>
             </div>
             <div className="forger-data">
                 <input type='checkbox'/>
