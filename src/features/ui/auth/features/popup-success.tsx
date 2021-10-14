@@ -2,7 +2,7 @@ import CheckSuccess from '../styles/cheque.svg';
 import Close from '../styles/Grupo 11693.svg';
 import {useRef, useState} from "react";
 export const PopupSuccess = () => {
-    const [_, setClose] = useState<boolean>(false);
+    const [close, setClose] = useState<boolean>(false);
     const refPopup = useRef<any>(null);
     const handleClose = () => {
         refPopup.current.style.display = "none";
