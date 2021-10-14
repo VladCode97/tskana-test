@@ -1,0 +1,15 @@
+@import url('./composition/links.css');
+@import url('./composition/actions.css');
+
+.menu {
+    width: 75%;
+    margin: 2% auto;
+    display: grid ;
+    grid-template-columns: 200px 400px 1fr;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 896px) {
+    .menu {
+        display: none;
+    }
+}

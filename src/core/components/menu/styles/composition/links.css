@@ -1,0 +1,13 @@
+.menu .links {
+    display: flex;
+}
+
+.menu .links .link {
+    padding: 10px;
+}
+
+.menu .links .link:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}

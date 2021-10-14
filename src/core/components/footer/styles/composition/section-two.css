@@ -1,0 +1,68 @@
+.content-section-two {
+    font-size:16px;
+    font-weight: 300;
+    width: 50%;
+    position: relative;
+    left: 2%;
+}
+
+.input-section-two .input {
+    width: 40%;
+    height: 30px;
+    position: relative;
+    left: 2%;
+    border: 1px solid #E3E3E3;
+    outline: none;
+}
+
+.input-section-two .btn {
+    background: #00ABEA;
+    color: white;
+    border: none ;
+    width: 100px;
+    height: 35px;
+    font-size: 17px;
+    font-weight: 300;
+    border-radius: 1px;
+    position: relative;
+    left: 5%;
+}
+
+.content-send {
+    font-size:14px;
+    font-weight: 300;
+    position: relative;
+    left: 2%;
+    width: 45%;
+}
+
+.content-send span {
+    color: #00ABEA;
+}
+
+.payment-image{
+    width: 80%;
+    position: relative;
+    left: 2%;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+    .subscribe  {
+        position: relative;
+        top: -155%;
+        width: 85%;
+    }
+
+    .find-icons {
+        position: relative;
+        top: -75%;
+        width: 85%;
+    }
+
+    .payment-image{
+        width: 45%;
+        position: relative;
+        left: 2%;
+    }
+
+}

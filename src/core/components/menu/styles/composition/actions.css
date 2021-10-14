@@ -1,0 +1,39 @@
+.menu .actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu .actions input {
+    border: none;
+    border-bottom: 1px solid #D6D6D6;
+    outline: none;
+    width: 45%;
+    position: relative;
+    left: -5%;
+}
+
+.menu .actions .icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu .actions .icons .icon {
+    padding: 10%;
+    justify-self: right;
+}
+
+.bag {
+    position: relative;
+}
+
+.bag .notification {
+    position: absolute;
+    top: -10%;
+    left: 55%;
+    background: #00ABEA;
+    width: 20px;
+    text-align:center;
+    height: 20px;
+    border-radius: 25px;
+    color: white;
+}
