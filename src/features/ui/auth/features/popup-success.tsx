@@ -7,6 +7,7 @@ export const PopupSuccess = () => {
     const handleClose = () => {
         refPopup.current.style.display = "none";
         setClose(true);
+        console.log(close);
     };
     return (
         <div ref={refPopup} className="popup-container">
