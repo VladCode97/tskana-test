@@ -75,3 +75,11 @@
     left: 1.5%;
     font-weight: 300;
 }
+
+.forget-password .user-no-found {
+    font-size: 15px;
+    position: relative;
+    color: #E02401;
+    margin: -5% auto 2% auto;
+    font-weight: 400;
+}

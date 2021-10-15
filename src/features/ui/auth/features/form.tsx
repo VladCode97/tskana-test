@@ -3,13 +3,15 @@ import {Alert} from "./alert";
 import {PopupSuccess} from "./popups/popup-success";
 import {container} from "../../../../core/dependency-inject/container";
 import {GetUserCommand} from "../../../aplications/users/get-user-command";
+import {useHistory} from "react-router-dom";
 
 export const FormAuth = () => {
     const [email, setEmail] = useState<string>("");
-    const [messageSuccess, setMessageSuccess] = useState<boolean>(false)
+    const [messageSuccess, setMessageSuccess] = useState<boolean>()
     const [errorEmail, setErrorEmail] = useState<boolean>(false);
     const [password, setPassword] = useState<string>("");
     const [errorPassword, setErrorPassword] = useState<boolean>(false);
+    const history = useHistory();
 
     const getData = async (email: string, password: string) => {
         return await container.resolve(GetUserCommand).execute(email, password);
@@ -20,11 +22,14 @@ export const FormAuth = () => {
             setErrorPassword(true);
             setErrorEmail(true);
         } else {
-
             const user = await getData(email, password);
             if (user !== undefined) {
                 setMessageSuccess(true);
-                console.log(user);
+                setTimeout(() => {
+                    history.push('/home');
+                }, 2000);
+            } else {
+                setMessageSuccess(false);
             }
         }
     }
@@ -72,6 +77,10 @@ export const FormAuth = () => {
                 </div>
             </div>
             <div className="forget-password">
+                {
+                    messageSuccess === false &&
+                    (<h1 className="user-no-found">Usuario no encontrado</h1>)
+                }
                 {/* eslint-disable jsx-a11y/anchor-is-valid */}
                 <a href="#" target="_blank"
                 > He olvidado mi contraseña</a>

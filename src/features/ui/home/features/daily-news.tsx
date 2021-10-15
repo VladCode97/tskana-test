@@ -1,5 +1,5 @@
-import {IProducts} from "../../../domain/models/products";
-import {FC, useEffect, useState} from "react";
+import { FC } from "react";
+import { IProducts } from "../../../domain/models/products";
 import {formatMoney} from "../../../../core/utils/format-number/format-number";
 
 type PropsShop = {

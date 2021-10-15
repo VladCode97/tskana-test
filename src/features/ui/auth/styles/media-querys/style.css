@@ -63,4 +63,18 @@
         left: 1.5%;
         font-weight: 300;
     }
+
+    .popup-container {
+        width: 80%;
+        left: 9%;
+        top: 21.8%;
+    }
+
+    .user-no-found {
+        font-size: 12px;
+        left: 1.6% !important;
+        color: #E02401;
+        font-weight: 400;
+    }
+
 }

@@ -5,6 +5,10 @@
         height: 350px;
     }
 
+    .container-daily-news .title {
+        left: -18%;
+    }
+
     .summer-home .title-summer, .title-outlet {
         top: 35%;
         left: 30%;
