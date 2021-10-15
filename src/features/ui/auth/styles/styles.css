@@ -1,6 +1,7 @@
 @import url("./composition/titles.css");
 @import url("./composition/form.css");
 @import url("./composition/popup.css");
+@import url("./media-querys/style.css");
 
 .auth-container {
     width: 60%;

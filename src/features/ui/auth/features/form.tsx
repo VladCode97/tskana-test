@@ -1,6 +1,8 @@
 import {useState} from "react";
 import {Alert} from "./alert";
-import {PopupSuccess} from "./popup-success";
+import {PopupSuccess} from "./popups/popup-success";
+import {container} from "../../../../core/dependency-inject/container";
+import {GetUserCommand} from "../../../aplications/users/get-user-command";
 
 export const FormAuth = () => {
     const [email, setEmail] = useState<string>("");
@@ -9,21 +11,28 @@ export const FormAuth = () => {
     const [password, setPassword] = useState<string>("");
     const [errorPassword, setErrorPassword] = useState<boolean>(false);
 
-    const handleInformation = () => {
+    const getData = async (email: string, password: string) => {
+        return await container.resolve(GetUserCommand).execute(email, password);
+    }
+
+    const handleInformation = async () => {
         if (password.length === 0 && email.length === 0) {
             setErrorPassword(true);
             setErrorEmail(true);
         } else {
-            setMessageSuccess(true);
+
+            const user = await getData(email, password);
+            if (user !== undefined) {
+                setMessageSuccess(true);
+                console.log(user);
+            }
         }
     }
 
     return (
         <div className="form-auth">
             {
-                messageSuccess && (
-                    <PopupSuccess/>
-                )
+                (messageSuccess) && <PopupSuccess/>
             }
             <div className="form-fields">
                 <div className="field">
@@ -43,7 +52,7 @@ export const FormAuth = () => {
                         }}
                         type='email' placeholder="ingrese un correo"/>
                     {errorEmail && (
-                        <Alert message={'Campo contraseña obligatorio'}/>)}
+                        <Alert message={'Campo correo obligatorio'}/>)}
                 </div>
                 <div className="field">
                     <label>Constraseña</label>
@@ -58,7 +67,7 @@ export const FormAuth = () => {
                             }
                         }}
                         type='password' placeholder="****"/>
-                    {errorPassword && (<Alert message={'Campo correo' +
+                    {errorPassword && (<Alert message={'Campo contraseña' +
                     ' obligatorio'}/>)}
                 </div>
             </div>

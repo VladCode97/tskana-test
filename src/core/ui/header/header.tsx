@@ -1,5 +1,5 @@
 import './styles/style.css';
-import ArrowDown from './styles/down-arrow.png';
+import ArrowDown from './styles/images/down-arrow.png';
 import {HeaderMother} from "../../../mocks/header-mother";
 
 export const Header = () => {

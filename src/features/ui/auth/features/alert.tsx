@@ -1,4 +1,4 @@
-import AlertImg from '../styles/important.svg';
+import AlertImg from '../styles/images/important.svg';
 import {FC} from "react";
 
 type props = {

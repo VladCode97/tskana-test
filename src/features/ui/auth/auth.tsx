@@ -1,7 +1,7 @@
 import {TitleAuth} from "./features/title-auth";
 import {FormAuth} from "./features/form";
 import './styles/styles.css';
-import ChangeActionImg from './styles/changeAction.png';
+import ChangeActionImg from './styles/images/changeAction.png';
 
 export const Auth = () => {
     return (

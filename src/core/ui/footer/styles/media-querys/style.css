@@ -1,0 +1,66 @@
+@media only screen
+and (min-device-width: 320px)
+and (max-device-height: 956px) {
+    .footer {
+        width: 100%;
+    }
+
+    .footer .info-sec {
+        font-size: 14px !important;
+        position: relative;
+        left: -5%;
+    }
+
+    /** Section one **/
+    .sections {
+        display: grid;
+        grid-template-columns: 200px;
+        grid-gap: 0;
+        position: relative;
+        top: 62%;
+        left: -4%;
+    }
+
+    .title {
+        font-size: 15px !important;
+    }
+
+    .help {
+        position: relative;
+        left: 10% !important;
+    }
+
+    /** Section two **/
+    .subscribe {
+        position: relative;
+        top: -160%;
+    }
+
+    .title-section-two {
+        position: relative;
+        top: -20% !important;
+        font-size: 15px !important;
+    }
+
+    .find-icons {
+        position: relative;
+        top: -75%;
+    }
+
+    .payment-image {
+        width: 55%;
+        position: relative;
+        top: -17% !important;
+        left: 2%;
+    }
+
+    .copyright-text {
+        position: relative;
+        top: 77%;
+        font-size: 13px;
+        width: 44%;
+        text-align: center;
+        padding: 3%;
+    }
+
+}

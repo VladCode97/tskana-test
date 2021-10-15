@@ -1,0 +1,50 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 896px) {
+    .menu {
+        width: 40%;
+        margin: 2% auto 20% auto !important;
+        display: grid ;
+        grid-template-columns: 200px !important;
+        position: relative;
+    }
+
+    .menu .logo {
+        position: absolute;
+        top: 100% !important;
+        left: 26%;
+    }
+
+    .menu .bag, .user {
+        position: absolute;
+        top: 210%;
+        left: 140%;
+    }
+
+    .menu  .user {
+        left: 165%;
+    }
+
+    .menu .search {
+        position: relative;
+        left: 480% !important;
+    }
+
+    .menu .links, .header {
+        display: none;
+    }
+
+    .menu .actions input {
+        width: 190%;
+        position: absolute;
+        top: 80%;
+    }
+
+    .menu .action-menu {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: absolute;
+        top: 105%;
+    }
+
+
+}

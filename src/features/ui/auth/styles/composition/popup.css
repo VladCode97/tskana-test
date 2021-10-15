@@ -5,13 +5,17 @@
     left: 37%;
 }
 
-.popup-container .success {
+.popup-container .success, .fail {
     font-size: 10px;
     background: #26B26C;
     display: flex;
     justify-content: space-evenly;
     border-radius: 10px;
     padding: 2%;
+}
+
+.popup-container .fail {
+    background: #E02401;
 }
 
 .popup-container .success h2 {

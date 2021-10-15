@@ -3,6 +3,7 @@ import {Menu} from "./core/ui/menu/menu";
 import {Footer} from "./core/ui/footer/footer";
 import {Header} from "./core/ui/header/header";
 import {Auth} from "./features/ui/auth/auth";
+import {Home} from "./features/ui/home/home";
 
 function App() {
     return (

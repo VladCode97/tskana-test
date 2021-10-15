@@ -7,14 +7,14 @@ export const ActionsMenu = () => {
         <div className="menu actions">
             <input placeholder="BUSCAR"/>
             <div className="icons">
-                <div className="icon">
+                <div className="icon search">
                     <img src={SearchImg} alt="Search"/>
                 </div>
                 <div className="icon bag">
                     <img src={BagImg} alt="Bag"/>
                     <span className="notification">0</span>
                 </div>
-                <div className="icon">
+                <div className="icon user">
                     <img src={UserImg} alt="User"/>
                 </div>
             </div>

@@ -45,24 +45,3 @@
     position: relative;
     left: 2%;
 }
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
-    .subscribe  {
-        position: relative;
-        top: -155%;
-        width: 85%;
-    }
-
-    .find-icons {
-        position: relative;
-        top: -75%;
-        width: 85%;
-    }
-
-    .payment-image{
-        width: 45%;
-        position: relative;
-        left: 2%;
-    }
-
-}

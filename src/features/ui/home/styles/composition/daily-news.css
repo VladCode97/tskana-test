@@ -1,0 +1,43 @@
+
+.container-daily-news {
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+}
+
+.container-daily-news .title {
+    font-size: 50px;
+
+}
+
+.container-daily-news .title:after {
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+    text-decoration: line-through;
+    position: relative;
+    width: 100%;
+    left: 5%;
+}
+
+.container-shopping {
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.container-shopping .product-image {
+    width: 200px;
+    height: 200px;
+}
+
+.container-shopping .product-title {
+    font-size: 15px;
+    font-weight: 400;
+    width: 60%;
+    color: #4A4A4A;
+}
+
+.container-shopping .product-price {
+    font-size: 15px;
+    font-weight: 400;
+}
