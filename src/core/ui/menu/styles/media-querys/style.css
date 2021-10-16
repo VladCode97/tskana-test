@@ -1,8 +1,8 @@
-@media only screen and (min-device-width: 320px) and (max-device-width: 820px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 950px) {
     .menu {
         width: 40%;
         margin: 2% auto 20% auto !important;
-        display: grid ;
+        display: grid;
         grid-template-columns: 200px !important;
         position: relative;
     }
@@ -10,7 +10,7 @@
     .menu .logo {
         position: absolute;
         top: 100% !important;
-        left: 26%;
+        left: 20% !important;
     }
 
     .menu .bag, .user {
@@ -19,13 +19,13 @@
         left: 140%;
     }
 
-    .menu  .user {
+    .menu .user {
         left: 165%;
     }
 
     .menu .search {
         position: relative;
-        left: 480% !important;
+        left: 520% !important;
     }
 
     .menu .links, .header {
@@ -33,9 +33,10 @@
     }
 
     .menu .actions input {
-        width: 190%;
+        width: 220%;
         position: absolute;
         top: 80%;
+        left: -25%;
     }
 
     .menu .action-menu {
@@ -43,7 +44,8 @@
         visibility: visible !important;
         opacity: 1 !important;
         position: absolute;
-        top: 105%;
+        top: 110%;
+        left: -8% !important;
     }
 
 
