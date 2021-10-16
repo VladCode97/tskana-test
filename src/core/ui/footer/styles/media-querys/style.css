@@ -1,8 +1,10 @@
 @media only screen
 and (min-device-width: 320px)
-and (max-device-height: 820px) {
+and (max-device-height: 950px) {
+
     .footer {
         width: 100%;
+        padding: 1.5% !important;
     }
 
     .footer .info-sec {
@@ -14,7 +16,7 @@ and (max-device-height: 820px) {
     /** Section one **/
     .sections {
         display: grid;
-        grid-template-columns: 200px;
+        grid-template-columns: 190px;
         grid-gap: 0;
         position: relative;
         top: 62%;
@@ -33,7 +35,7 @@ and (max-device-height: 820px) {
     /** Section two **/
     .subscribe {
         position: relative;
-        top: -160%;
+        top: -154%;
     }
 
     .title-section-two {
@@ -44,23 +46,43 @@ and (max-device-height: 820px) {
 
     .find-icons {
         position: relative;
-        top: -75%;
+        top: -70%;
+    }
+
+
+    .payment {
+        position: relative;
+        top: -25%;
     }
 
     .payment-image {
-        width: 55%;
+        width: 50%;
         position: relative;
-        top: -17% !important;
+        top: -10% !important;
         left: 2%;
     }
 
     .copyright-text {
         position: relative;
-        top: 77%;
+        top: 80%;
         font-size: 13px;
-        width: 44%;
+        width: 45%;
         text-align: center;
-        padding: 3%;
+        padding: 2%;
+    }
+
+    .input-section-two .input {
+        width: 33%;
+    }
+
+    .input-section-two .btn {
+        width: 90px;
+        height: 35px;
+        font-size: 13px;
+    }
+
+    .icons-section-two {
+        width: 20% !important;
     }
 
 }

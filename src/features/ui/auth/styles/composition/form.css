@@ -57,13 +57,15 @@
 
 .signIn {
     position: relative;
-    left: 30%;
-    width: 45%;
+    left: 32%;
+    width: 38%;
     padding: 1.2%;
     background: #00ABEA;
     border: none;
     color: white;
-    font-size: 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    opacity: 1;
 }
 
 .alert img {

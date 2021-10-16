@@ -13,19 +13,20 @@
     left: 2%;
     border: 1px solid #E3E3E3;
     outline: none;
+    border-radius: 2px;
 }
 
 .input-section-two .btn {
     background: #00ABEA;
     color: white;
     border: none ;
-    width: 100px;
+    width: 93px;
     height: 35px;
     font-size: 17px;
     font-weight: 300;
-    border-radius: 1px;
     position: relative;
     left: 5%;
+    border-radius: 4px;
 }
 
 .content-send {

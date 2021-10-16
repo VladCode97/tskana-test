@@ -16,11 +16,12 @@
 
 .list-subtitles li {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     text-decoration: none;
     list-style: none;
-    padding: 2%;
+    padding: 1.5%;
     color: #333E48;
+    text-align: left;
 }
 
 .company-title {
